@@ -262,7 +262,8 @@ body {
     appearance: none;
     width: 5vw;
     height: 5vw;
-    background-color: #ffffff;
+    background-color: #011203;
+    border: 3px solid white;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -429,6 +430,188 @@ body {
     text-decoration: none;
 }
 /*<!-- END Modal Structure MY PROJECTS -->*/
+
+
+/*<!--  Modal Structure MY EDUCATION -->*/
+.education {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(105, 181, 7, 0.1);
+}
+
+
+.Escroll-view {
+    max-height: 200vw;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    overflow-y: auto;
+    margin-top: 25px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    background-color: transparent; /* Make the background fully transparent */
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle inner shadow */
+    justify-content: center; /* Center boxes horizontally */
+    gap: 20px; /* Optional: Add spacing between boxes */
+}
+
+/* Box styling */
+.Ebox {
+    background: rgba(65, 99, 82, 0.7); /* Optional: set a semi-transparent background */
+    box-shadow: 
+        inset 0 1px 3px rgba(0, 0, 0, 0.3),  /* First inner shadow */
+        inset 0 -1px 2px rgba(0, 0, 0, 0.4), /* Second inner shadow */
+        0 4px 8px rgba(0, 0, 0, 0.4);        /* Outer shadow */
+    overflow: hidden;
+    backdrop-filter: blur(10px); /* Apply background blur */
+    padding: 10px;
+    margin: 5px 0;
+    height: 10vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 25px; /* Optional: Adds rounded corners */
+    flex: 0 0 calc(90% - 20px); /* Ensure three boxes per row with spacing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+.Box-Contain{
+    position: relative;
+    height: 10vw;
+    margin-top: -0.7VW;
+    margin-left: -0.6VW;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.95);
+    width: 13vw;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+
+}
+.Box-Contain img{
+    height: 8vw;
+    border-radius: 100%;
+    margin-top:0.9vw;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    position: relative;
+}
+
+.letter_content {
+    position: relative;
+    text-align: center;
+    color: aliceblue;
+    margin-left: 5vw; 
+    margin-top: -9.3vw;
+    font-size: 1.6vw;
+}
+.letter_content i{
+    font-size: 1vw;
+    font-weight: 200;
+}
+.letter_content b{
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+#aloysius_background{
+    background: rgba(0, 163, 232, 0.7);
+}
+#ousl_background{
+    background: rgba(236, 147, 36, 0.7);
+}
+
+.EboxReults {
+    background: rgba(65, 99, 82, 0.7); /* Optional: set a semi-transparent background */
+    box-shadow: 
+        inset 0 1px 3px rgba(0, 0, 0, 0.3),  /* First inner shadow */
+        inset 0 -1px 2px rgba(0, 0, 0, 0.4), /* Second inner shadow */
+        0 4px 8px rgba(0, 0, 0, 0.4);        /* Outer shadow */
+    overflow: hidden;
+    backdrop-filter: blur(10px); /* Apply background blur */
+    padding: 10px;
+    margin: 10px 0;
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 25px; /* Optional: Adds rounded corners */
+    flex: 0 0 calc(40% - 10px); /* Ensure three boxes per row with spacing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/*<!--  END Modal Structure MY EDUCATION -->*/
+
+#box1{
+    background-color: transparent; /* No background color */
+    color: #fff; /* Text color set to white */
+    box-shadow: none;       /* Outer shadow */
+    position: relative;
+    margin-left: 1vw;
+    text-align: left;
+    padding: 4vw;
+}
+.ri-arrow-right-circle-fill{
+    color: #ffffff;
+    font-size: 4vw;
+}
+
+
+.box:hover {
+    transform: scale(1.05); /* Slightly enlarge the box */
+    box-shadow: 
+        inset 0 1px 3px rgba(0, 0, 0, 0.3),  /* Maintain the same inner shadows */
+        inset 0 -1px 2px rgba(0, 0, 0, 0.4), 
+        0 6px 12px rgba(0, 0, 0, 0.5);        /* Enhance outer shadow on hover */
+}
+
+
+/* Optional: Styling for text inside the box */
+.box h3, .box p {
+    margin: 0;
+    padding: 5px;
+}
+.box h5
+{ 
+    color: #ffffff;
+}
+.box p 
+{
+    color: #0a2c11;
+    font-size: 0.9vw;
+}
+
+.box a 
+{
+    text-decoration: none; 
+    color: #000;
+}
+.close1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #000;
+    text-decoration: none;
+}
 
 /* Media Queries for Tablet Screens */
 @media (max-width: 1024px) {
