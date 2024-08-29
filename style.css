@@ -621,7 +621,7 @@ body {
         box-sizing: border-box;
         font-family: 'poppins', 'Arial', sans-serif;
     }
-    
+
     body {
         display: flex;
         justify-content: center;
@@ -630,30 +630,29 @@ body {
         background-color: #011203;
         padding: 10px;
     }
-    
+
     .container {
         display: flex;
         background-image: url('back.jpeg');
-        background-position: center; 
+        background-position: center;
         background-repeat: no-repeat;
-        background-size:cover; 
+        background-size: cover;
         min-height: 165vw;
         min-width: 150VW;
         border-radius: 20px;
         margin-top: -3vw;
         overflow: hidden;
         margin-left: -40vw;
-        
+
     }
-    
+
     .sidebar {
-        background-color:transparent;
-        color: #fff;
+        background-color: transparent;
         display: flex;
         position: absolute;
         text-align: center;
     }
-    
+
     .logo h1 {
         font-family: "Bangers", "system-ui", sans-serif;
         font-weight: 400;
@@ -663,90 +662,80 @@ body {
         position: absolute;
         margin-left: 16vw;
         margin-top: 2vw;
-        
+
     }
-    
+
     .profile_image img {
         width: 45vw;
         margin-top: 25vw;
-        box-shadow: 0 6px 8px rgba(255, 255, 255, 0.3);
+
         border-radius: 100%;
-        margin-left: 190vw;
+        margin-left: 182vw;
         transition: transform 0.3s ease;
-        animation: float 3s ease-in-out infinite; /* Adds the floating animation */
+        animation: float 3s ease-in-out infinite;
+        /* Adds the floating animation */
     }
-    
-    @keyframes float {
-        0%, 100% {
-            transform: translateY(0); /* Start and end positions */
-        }
-        50% {
-            transform: translateY(-20px); /* Middle position (float up) */
-        }
-    }
-    
+
     .contact-info {
-        margin-top: 180vw;
-        margin-left: 135VW;
+        margin-top: 178vw;
+        margin-left: 130VW;
         position: absolute;
     }
-    
+
     .contact-info h2 {
         margin-bottom: 10px;
         font-size: 2.8vw;
     }
-    
+
     .contact-info p {
         font-size: 2.3vw;
         margin-bottom: 5px;
         text-align: center;
         overflow: hidden;
         padding: auto;
-        
-    
+
+
     }
-    
+
     .social-media {
         display: flex;
         gap: 10px;
         position: absolute;
         margin-top: 170vw;
-        margin-left: 135vw;
+        margin-left: 130vw;
         text-align: center;
-        
+
     }
-    
+
     .ri-instagram-fill,
     .ri-youtube-fill,
     .ri-facebook-circle-fill,
     .ri-linkedin-box-fill,
     .ri-whatsapp-fill {
-        color: white;
         font-size: 5.8vw;
         text-align: center;
         display: flex;
     }
-    
-    
+
+
     .social-media a {
         text-decoration: none;
         text-align: center;
-        
-        
+
+
     }
-    
+
     .main-content {
         width: 100%;
         height: 100;
-        color: #fff;
-        background-image: url(none); 
-        background-position: center; 
+        background-image: url(none);
+        background-position: center;
         background-repeat: no-repeat;
-        background-size:cover; 
-        
-        
+        background-size: cover;
+
+
     }
-    
+
     .navbar {
         padding: 2vw 2vw;
         display: flex;
@@ -759,27 +748,22 @@ body {
         width: 63vw;
         margin-top: 2vw;
         border-radius: 25px;
-        background-color: rgba(86, 141, 16, 0.69);
     }
-    
+
     .navbar a {
-        color: #fff;
+
         font-size: 1.8vw;
-        text-decoration: none;
-        transition: background-color 0.3s;
-        border:3px solid #fff;
-        cursor: pointer;
-    
+        border: 3px solid #fff;
         font-weight: 800;
         border-radius: 25px;
         padding: 2vw 5vw;
     }
-    
+
     .navbar a:hover {
         color: #444;
     }
-    
-    
+
+
     .btn-signup {
         padding: 2vw 5vw;
         border: none;
@@ -789,60 +773,60 @@ body {
         font-size: 1.8vw;
         font-weight: 800;
     }
-    
+
     .btn-signup {
-        border: 4px solid #ffffff; /* Corrected border with width, style, and color */
-        background-color: #011203; /* New background color */
-        color: #ffffff; /* Text color */
-        font-size:1.8vw;
-        cursor: pointer; /* Optional: Add a pointer cursor on hover */
+        border: 3px solid #ffffff;
+        /* Corrected border with width, style, and color */
+        background-color: #011203;
+        /* New background color */
+        color: #ffffff;
+        /* Text color */
+        font-size: 1.8vw;
+        cursor: pointer;
+        /* Optional: Add a pointer cursor on hover */
     }
-    
-    
+
+
     .hero-section {
         text-align: left;
         margin-top: 10vw;
         margin-left: 45vw;
     }
-    
+
     .hero-section h1 {
-        font-size: 4.3vw;
+        font-size: 4vw;
         margin-bottom: 10px;
         margin-top: 19vw;
-        overflow: hidden; /* Ensures text doesn't overflow */
-        white-space: nowrap; /* Prevents line breaks */
-        width: 0; /* Initial width for animation */
+        overflow: hidden;
+        /* Ensures text doesn't overflow */
+        white-space: nowrap;
+        /* Prevents line breaks */
+        width: 0;
+        /* Initial width for animation */
         animation: typing 4s steps(50, end) infinite alternate, blink-caret 0.75s step-end infinite;
     }
-    
-    /* Typing animation */
-    @keyframes typing {
-        from { width: 0 }
-        to { width: 70% }
-    }
-    
-    /* Blinking caret animation */
-    @keyframes blink-caret {
-        50% { border-color: none; }
-    }
-    
+
+
     .hero-section p {
         font-size: 2.9vw;
     }
-    
+
     .info-section {
         display: flex;
-        flex-direction: column; /* Aligns the items vertically */
-        justify-content: center; /* Centers the items vertically within the container */
-        align-items: center; /* Centers the items horizontally within the container */
+        flex-direction: column;
+        /* Aligns the items vertically */
+        justify-content: center;
+        /* Centers the items vertically within the container */
+        align-items: center;
+        /* Centers the items horizontally within the container */
         margin-bottom: 20%;
         margin-top: 42vw;
         margin-left: 70vw;
-        
+
     }
-    
+
     .info-box {
-        background-color: rgba(86, 141, 16, 0.69);
+
         padding: 15px;
         border-radius: 30px;
         width: 70vw;
@@ -851,33 +835,35 @@ body {
         height: 18vw;
         margin-left: -32vw;
     }
-    
-    
+
+
     .info-box h2 {
         margin-bottom: 10px;
         font-size: 3.5vw;
         text-align: left;
     }
-    
-    .ri-arrow-right-circle-line{
+
+    .ri-arrow-right-circle-line {
         font-size: 8vw;
         position: absolute;
         margin-left: 24vw;
         margin-top: 1vw;
     }
+
     .info-box p {
         margin-bottom: 10px;
         padding: 2px;
         font-size: 2.2vw;
         text-align: left;
     }
+
     .cta-section {
         text-align: left;
-        margin-left:47vw;
+        margin-left: 47vw;
         position: absolute;
         margin-top: -110vw;
     }
-    
+
     .slider-cta {
         -webkit-appearance: none;
         width: 58vw;
@@ -889,26 +875,219 @@ body {
         padding: 3px;
         transition: background-color 0.3s;
     }
-    
+
     .slider-cta::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
         width: 7vw;
         height: 7vw;
-        background-color: #ffffff;
         border-radius: 100%;
-        cursor: pointer;
         transition: background-color 0.3s;
     }
-    
+
     .slider-cta::-moz-range-thumb {
         width: 6vw;
         height: 6vw;
-        background-color: #ffffff;
         border-radius: 50%;
-        cursor: pointer;
         transition: background-color 0.s;
     }
-    
-   
+
+
+
+
+    /*<!-- Modal Structure MY PROJECTS -->*/
+
+    /* Modal default styles (hidden by default) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(105, 181, 7, 0.1);
+    }
+
+    .modal-content-h1 {
+        text-align: center;
+        font-size: 5VW;
+
+    }
+    /* Box styling */
+    .box {
+        padding: 10px;
+        margin: 10px 0;
+        height: 38vw;
+        flex: 0 0 calc(100% - 20px);
+        /* Ensure three boxes per row with spacing */
+
+    }
+    #box1 {
+        margin-left: 0vw;
+        text-align: left;
+        padding: 5vw;
+        height: 7vw;
+    }
+
+    .ri-arrow-right-circle-fill {
+        color: #ffffff;
+        font-size: 9vw;
+    }
+
+
+    /* Optional: Styling for text inside the box */
+    .box h3,
+    .box p {
+        margin: 0;
+        padding: 5px;
+    }
+
+    .box h5 {
+        color: #ffffff;
+        font-size: 3vw;
+    }
+
+    .box p {
+        color: #0a2c11;
+        font-size: 2.2vw;
+    }
+
+    .box a {
+        text-decoration: none;
+        color: #000;
+    }
+    /*<!-- END Modal Structure MY PROJECTS -->*/
+
+
+    /*<!--  Modal Structure MY EDUCATION -->*/
+    .education {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+
+    /* Box styling */
+    .Ebox {
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+        /* Apply background blur */
+        padding: 10px;
+        margin: 5px 0;
+        height: 20vw;
+        gap: 1vw;
+        /* Center content vertically */
+        position: relative;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 25px;
+        /* Optional: Adds rounded corners */
+        flex: 0 0 calc(100% - 20px);
+        /* Ensure three boxes per row with spacing */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Smooth transition for hover effect */
+    }
+
+
+    .Box-Contain {
+        position: relative;
+        height: 20vw;
+        margin-top: -2.2VW;
+        margin-left: -2.2VW;
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.95);
+        width: 17vw;
+        border-radius: 25px;
+        position: relative;
+        cursor: pointer;
+        text-align: center;
+
+    }
+
+    .Box-Contain img {
+        height: 15vw;
+        border-radius: 100%;
+        margin-top: 3vw;
+        align-items: center;
+        justify-content: center;
+        /* Center content vertically */
+        position: relative;
+    }
+
+    .letter_content {
+        position: relative;
+        text-align: center;
+        color: aliceblue;
+        margin-left: 16vw;
+        margin-top: -16.3vw;
+        font-size: 2.9vw;
+    }
+
+    .letter_content i {
+        font-size: 1.8vw;
+        font-weight: 300;
+    }
+
+    .letter_content b {
+        font-size: 2vw;
+        font-weight: 400;
+    }
+
+
+
+    .EboxReults {
+        backdrop-filter: blur(10px);
+        /* Apply background blur */
+        height: 60vw;
+        flex: 0 0 calc(90% - 10px);
+        /* Ensure three boxes per row with spacing */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Smooth transition for hover effect */
+    }
+
+    .letter_contentR h4{
+        font-size: 2.5vw;
+    }
+    .letter_contentR i{
+        font-size: 2vw;
+    }
+    .letter_contentR table {
+        margin: 2vw auto;
+        /* Center the table horizontally */
+        border-collapse: collapse;
+        align-items: center;
+        background-color: rgba(22, 138, 78, 0.1);
+        box-shadow:
+            inset 0 1px 3px rgba(0, 0, 0, 0.3),
+            /* First inner shadow */
+            inset 0 -1px 2px rgba(0, 0, 0, 0.4),
+            /* Second inner shadow */
+            0 4px 8px rgba(0, 0, 0, 0.4);
+        /* Outer shadow */
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Add a subtle shadow */
+    }
+
+    .letter_contentR tr,
+    .letter_contentR td {
+        padding-right: 20px;
+        /* Increase padding for more space inside cells */
+        padding-left: 20px;
+        /* Increase padding for more space inside cells */
+        text-align: center;
+        width: 20%;
+        border: 1px solid rgba(255, 255, 255, 0.363);
+        font-size: 2vw;
+        /* Increase font size for better readability */
+    }
+
+
+
 }
