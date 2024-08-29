@@ -633,31 +633,25 @@ body {
     
     .container {
         display: flex;
-        min-width: 100%;
         background-image: url('back.jpeg');
         background-position: center; 
         background-repeat: no-repeat;
         background-size:cover; 
         min-height: 165vw;
+        min-width: 150VW;
         border-radius: 20px;
-        margin-top: -8vw;
+        margin-top: -3vw;
         overflow: hidden;
-        padding-top: 11.4px;
-        margin-left: -1vw;
+        margin-left: -40vw;
         
     }
     
     .sidebar {
-        width: 100%;
-        background-color: #011203;
+        background-color:transparent;
         color: #fff;
-        padding: 10px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 3vw;
+        position: absolute;
         text-align: center;
-        min-height: 20vw;
     }
     
     .logo h1 {
@@ -666,17 +660,18 @@ body {
         font-size: 10vw;
         font-style: normal;
         text-align: left;
-        margin-left: -48vw;
+        position: absolute;
+        margin-left: 16vw;
         margin-top: 2vw;
         
     }
     
     .profile_image img {
         width: 45vw;
-        margin-top: 16vw;
+        margin-top: 25vw;
         box-shadow: 0 6px 8px rgba(255, 255, 255, 0.3);
         border-radius: 100%;
-        margin-left: 50vw;
+        margin-left: 190vw;
         transition: transform 0.3s ease;
         animation: float 3s ease-in-out infinite; /* Adds the floating animation */
     }
@@ -691,8 +686,8 @@ body {
     }
     
     .contact-info {
-        margin-top: 160vw;
-        width: 100%;
+        margin-top: 180vw;
+        margin-left: 135VW;
         position: absolute;
     }
     
@@ -715,7 +710,8 @@ body {
         display: flex;
         gap: 10px;
         position: absolute;
-        margin-top: 180vw;
+        margin-top: 170vw;
+        margin-left: 135vw;
         text-align: center;
         
     }
@@ -742,11 +738,8 @@ body {
     .main-content {
         width: 100%;
         height: 100;
-        padding: 20px;
         color: #fff;
         background-image: url(none); 
-         width: 200vw;
-         height: 54vw;
         background-position: center; 
         background-repeat: no-repeat;
         background-size:cover; 
@@ -755,31 +748,28 @@ body {
     }
     
     .navbar {
-        padding: 2vw 5vw;
+        padding: 2vw 2vw;
         display: flex;
         position: relative;
         align-items: center;
         margin-bottom: 20px;
-        margin-TOP: -92.5vw;
-        margin-left: 3vw;
-        gap: 2.7vw;
-        padding: 6px;
-        width: 60vw;
+        margin-left: 63vw;
+        gap: 2.5vw;
+        padding: 1%;
+        width: 63vw;
+        margin-top: 2vw;
         border-radius: 25px;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 20px;
         background-color: rgba(86, 141, 16, 0.69);
     }
     
     .navbar a {
         color: #fff;
-        font-size: 1.24vw;
+        font-size: 1.8vw;
         text-decoration: none;
         transition: background-color 0.3s;
         border:3px solid #fff;
         cursor: pointer;
-        font-size: 1.5vw;
+    
         font-weight: 800;
         border-radius: 25px;
         padding: 2vw 5vw;
@@ -796,7 +786,7 @@ body {
         border-radius: 25px;
         /*margin-left: 31.2vw;*/
         margin-top: -0.28vw;
-        font-size: 1.5vw;
+        font-size: 1.8vw;
         font-weight: 800;
     }
     
@@ -804,24 +794,23 @@ body {
         border: 4px solid #ffffff; /* Corrected border with width, style, and color */
         background-color: #011203; /* New background color */
         color: #ffffff; /* Text color */
-        font-size: 1.21vw;;
+        font-size:1.8vw;
         cursor: pointer; /* Optional: Add a pointer cursor on hover */
     }
     
     
     .hero-section {
         text-align: left;
-        margin-top: 8vw;
-        margin-left: -15vw;
+        margin-top: 10vw;
+        margin-left: 45vw;
     }
     
     .hero-section h1 {
-        font-size: 3.8vw;
+        font-size: 4.3vw;
         margin-bottom: 10px;
         margin-top: 19vw;
         overflow: hidden; /* Ensures text doesn't overflow */
         white-space: nowrap; /* Prevents line breaks */
-        
         width: 0; /* Initial width for animation */
         animation: typing 4s steps(50, end) infinite alternate, blink-caret 0.75s step-end infinite;
     }
@@ -838,7 +827,7 @@ body {
     }
     
     .hero-section p {
-        font-size: 2.4vw;
+        font-size: 2.9vw;
     }
     
     .info-section {
@@ -846,8 +835,9 @@ body {
         flex-direction: column; /* Aligns the items vertically */
         justify-content: center; /* Centers the items vertically within the container */
         align-items: center; /* Centers the items horizontally within the container */
-        margin-bottom: 20px;
+        margin-bottom: 20%;
         margin-top: 42vw;
+        margin-left: 70vw;
         
     }
     
@@ -883,14 +873,15 @@ body {
     }
     .cta-section {
         text-align: left;
-        margin-left: -16vw;
-        margin-top: -85vw;
+        margin-left:47vw;
+        position: absolute;
+        margin-top: -110vw;
     }
     
     .slider-cta {
         -webkit-appearance: none;
-        width: 55vw;
-        height: 8vw;
+        width: 58vw;
+        height: 10vw;
         background-color: #011203;
         border: 3px solid white;
         border-radius: 50px;
@@ -902,8 +893,8 @@ body {
     .slider-cta::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
-        width: 6vw;
-        height: 6vw;
+        width: 7vw;
+        height: 7vw;
         background-color: #ffffff;
         border-radius: 100%;
         cursor: pointer;
