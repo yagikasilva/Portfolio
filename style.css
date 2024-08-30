@@ -11,7 +11,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #011203;
-    padding: 10px;
+    
 }
 
 .container {
@@ -21,14 +21,14 @@ body {
     min-height: 97vh;
     border-radius: 20px;
     overflow: hidden;
-    padding-top: 8px;
+    
 }
 
 .sidebar {
     width: 60%;
     background-color: #011203;
     color: #fff;
-    padding: 10px;
+    padding: 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,13 +66,13 @@ body {
 }
 
 .contact-info h2 {
-    margin-bottom: 10px;
+    margin-bottom: 1%;
     font-size: 1.8vw;
 }
 
 .contact-info p {
     font-size: 0.92vw;
-    margin-bottom: 5px;
+    margin-bottom: 1%;
     text-align: left;
     overflow: hidden;
     padding: auto;
@@ -83,7 +83,7 @@ body {
 .social-media {
     display: flex;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 2%;
     text-align: center
 }
 
@@ -105,9 +105,8 @@ body {
 }
 
 .main-content {
-    width: 75%;
-    height: 100;
-    padding: 20px;
+    width: 75vw;
+    height: 70vw;
     color: #fff;
     background-image: url('background_image (1).png'); /* Add the correct path to the image */
      /* Ensures the image covers the entire element */
@@ -121,20 +120,16 @@ body {
 }
 
 .navbar {
-    padding: 2vw 5vw;
+    padding: 4% 9%;
     display: flex;
     position: relative;
     align-items: center;
-    margin-bottom: 20px;
-    margin-left: -0.8vw;
-    gap: 2.7vw;
+    margin-left: 1.7%;
+    gap: 2.5vw;
     padding: 6px;
-    width: 52.3vw;
-    margin-top: 1.3vw;
+    width: 51.6vw;
+    margin-top: 3.5%;
     border-radius: 25px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 20px;
     background-color: rgba(86, 141, 16, 0.69);
 }
 
@@ -143,14 +138,15 @@ body {
     font-size: 1.24vw;
     text-decoration: none;
     transition: background-color 0.3s;
-    border:3px solid #fff;
+    border:4px solid #fff;
     cursor: pointer;
     border-radius: 25px;
     padding: 2vw 5vw;
 }
 
 .navbar a:hover {
-    color: #444;
+    color: #a5e783;
+    font-weight: 500;
 }
 
 
@@ -158,8 +154,7 @@ body {
     padding: 2vw 5vw;
     border: none;
     border-radius: 25px;
-    /*margin-left: 31.2vw;*/
-    margin-top: -0.28vw;
+    
 }
 
 .btn-signup {
@@ -169,7 +164,10 @@ body {
     font-size: 1.21vw;;
     cursor: pointer; /* Optional: Add a pointer cursor on hover */
 }
-
+.btn-signup:hover {
+    color: #a5e783;
+    font-weight: 500;
+}
 
 .hero-section {
     text-align: left;
@@ -179,9 +177,9 @@ body {
 .hero-section h1 {
     font-size: 2.8vw;
     margin-bottom: 10px;
+    margin-left: 2%;
     overflow: hidden; /* Ensures text doesn't overflow */
     white-space: nowrap; /* Prevents line breaks */
-    
     width: 0; /* Initial width for animation */
     animation: typing 4s steps(50, end) infinite alternate, blink-caret 0.75s step-end infinite;
 }
@@ -199,6 +197,7 @@ body {
 
 .hero-section p {
     font-size: 1.4vw;
+    margin-left: 2%;
 }
 
 .info-section {
@@ -206,15 +205,15 @@ body {
     flex-direction: column; /* Aligns the items vertically */
     justify-content: right; /* Centers the items vertically within the container */
     align-items: right; /* Centers the items horizontally within the container */
-    margin-bottom: 20px;
+    margin-bottom: 20%;
     margin-left: 45vw;
-    margin-top: -13vw;
+    margin-top: -19%;
     gap: 2vw; /* Adds space between the info boxes */
 }
 
 .info-box {
     background-color: rgba(86, 141, 16, 0.69);
-    padding: 15px;
+    padding: 5.5%;
     border-radius: 30px;
     width: 25vw;
     text-align: center;
@@ -242,7 +241,8 @@ body {
 .cta-section {
     text-align: left;
     margin-left: -23vw;
-    margin-top: -6vw;
+    margin-top: -27.5%;
+    position: relative;
 }
 
 .slider-cta {
@@ -253,7 +253,7 @@ body {
     border: 3px solid white;
     border-radius: 50px;
     cursor: pointer;
-    padding: 3px;
+    padding: 0.2%;
     transition: background-color 0.3s;
 }
 
@@ -483,6 +483,10 @@ body {
     flex: 0 0 calc(90% - 20px); /* Ensure three boxes per row with spacing */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
+
+.Ebox:hover {
+    background: rgba(65, 99, 82, 0.9); /* Highlight row on hover */
+}
 .Box-Contain{
     position: relative;
     height: 10vw;
@@ -526,31 +530,76 @@ body {
 #aloysius_background{
     background: rgba(0, 163, 232, 0.7);
 }
+#aloysius_background:hover {
+    background: rgba(0, 163, 232, 0.9); /* Highlight row on hover */
+}
+
 #ousl_background{
     background: rgba(236, 147, 36, 0.7);
 }
 
+#ousl_background:hover {
+    background-color: rgba(236, 147, 36, 0.9);; /* Highlight row on hover */
+}
+
 .EboxReults {
-    background: rgba(65, 99, 82, 0.7); /* Optional: set a semi-transparent background */
+    background: rgba(4, 155, 85, 0.7); /* Optional: set a semi-transparent background */
     box-shadow: 
         inset 0 1px 3px rgba(0, 0, 0, 0.3),  /* First inner shadow */
         inset 0 -1px 2px rgba(0, 0, 0, 0.4), /* Second inner shadow */
         0 4px 8px rgba(0, 0, 0, 0.4);        /* Outer shadow */
     overflow: hidden;
     backdrop-filter: blur(10px); /* Apply background blur */
-    padding: 10px;
-    margin: 10px 0;
-    height: 15vw;
+    height: 30vw;
     display: flex;
+    text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Center content vertically */
     position: relative;
     cursor: pointer;
-    text-align: center;
     border-radius: 25px; /* Optional: Adds rounded corners */
     flex: 0 0 calc(40% - 10px); /* Ensure three boxes per row with spacing */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.letter_contentR {
+    position: relative;
+    text-align: center;
+    align-items: baseline;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.letter_contentR table {
+    
+    margin: 2vw auto; /* Center the table horizontally */
+    border-collapse: collapse;
+    align-items: center;
+    background-color: rgba(22, 138, 78, 0.1);
+    box-shadow: 
+        inset 0 1px 3px rgba(0, 0, 0, 0.3),  /* First inner shadow */
+        inset 0 -1px 2px rgba(0, 0, 0, 0.4), /* Second inner shadow */
+        0 4px 8px rgba(0, 0, 0, 0.4);        /* Outer shadow */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.letter_contentR tr, .letter_contentR td {
+    padding-right: 60px; /* Increase padding for more space inside cells */
+    padding-left: 60px; /* Increase padding for more space inside cells */
+    text-align: center;
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.363);
+    font-size: 1vw; /* Increase font size for better readability */
+}
+
+.letter_contentR tr {
+    border-bottom: 1px solid rgba(10, 10, 10, 0.2);
+}
+
+.letter_contentR tr:hover {
+    background-color: rgba(22, 138, 78, 0.9); /* Highlight row on hover */
 }
 
 /*<!--  END Modal Structure MY EDUCATION -->*/
@@ -612,6 +661,7 @@ body {
     color: #000;
     text-decoration: none;
 }
+
 
 /* Media Queries for Tablet Screens */
 @media (max-width: 1024px) {
