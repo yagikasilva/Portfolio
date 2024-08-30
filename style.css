@@ -125,7 +125,7 @@ body {
     position: relative;
     align-items: center;
     margin-left: 1.7%;
-    gap: 2.5vw;
+    gap: 2.6vw;
     padding: 6px;
     width: 51.6vw;
     margin-top: 3.5%;
@@ -241,7 +241,7 @@ body {
 .cta-section {
     text-align: left;
     margin-left: -23vw;
-    margin-top: -27.5%;
+    margin-top: -25.5%;
     position: relative;
 }
 
