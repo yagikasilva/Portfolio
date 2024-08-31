@@ -108,28 +108,27 @@ body {
     width: 75vw;
     height: 70vw;
     color: #fff;
-    background-image: url('background_image (1).png'); /* Add the correct path to the image */
+    background-image: url('background.jpeg'); /* Add the correct path to the image */
      /* Ensures the image covers the entire element */
      width: 200vw;
-     height: 54vw;
+     height: 49vw;
     background-position: center; 
     background-repeat: no-repeat;
     background-size:cover; 
+    border-radius: 50px;
     
     
 }
-
 .navbar {
-    padding: 4% 9%;
+    padding: 0.5vw 0.5vw;
     display: flex;
-    position: relative;
+    justify-content: center;
     align-items: center;
-    margin-left: 1.7%;
-    gap: 2.6vw;
-    padding: 6px;
-    width: 51.6vw;
-    margin-top: 3.5%;
-    border-radius: 25px;
+    margin-left: 15%;
+    margin-top: 1vw;
+    gap: 2vw;
+    width: 52vw;
+    border-radius: 50px;
     background-color: rgba(86, 141, 16, 0.69);
 }
 
@@ -138,10 +137,10 @@ body {
     font-size: 1.24vw;
     text-decoration: none;
     transition: background-color 0.3s;
-    border:4px solid #fff;
+    border: 4px solid #fff;
     cursor: pointer;
-    border-radius: 25px;
-    padding: 2vw 5vw;
+    border-radius: 40px;
+    padding: 2vw 4.9vw;
 }
 
 .navbar a:hover {
@@ -243,7 +242,13 @@ body {
     margin-left: -23vw;
     margin-top: -25.5%;
     position: relative;
+    width: 56.5%;
+    padding: 0.5vw; /* Adds outer padding */
+    border-radius: 100px; /* Rounds the corners */
+    background-color: #011203; /* Optional: background color */
+    border: 2px solid #011203; /* Optional: border for visual separation */
 }
+
 
 .slider-cta {
     -webkit-appearance: none;
@@ -251,18 +256,18 @@ body {
     height: 6vw;
     background-color: #011203;
     border: 3px solid white;
-    border-radius: 50px;
+    border-radius: 60px;
     cursor: pointer;
-    padding: 0.2%;
+    padding: 0.3%;
     transition: background-color 0.3s;
 }
 
 .slider-cta::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 5vw;
-    height: 5vw;
-    background-color: #011203;
+    width: 5.5vw;
+    height: 5.5vw;
+    background-color: #fdfdfd;
     border: 3px solid white;
     border-radius: 50%;
     cursor: pointer;
@@ -663,6 +668,165 @@ body {
 }
 
 
+
+/*<!-- Modal Structure About -->*/
+/* styles.css */
+
+/* Modal default styles (hidden by default) */
+
+/*<!-- Modal Structure About -->*/
+/* styles.css */
+
+/* Modal default styles (hidden by default) */
+.about {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(105, 181, 7, 0.1);
+}
+
+/* Scroll View */
+.Ascroll-view {
+    max-height: 200vh; /* Changed from vw (viewport width) to vh (viewport height) */
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    overflow-y: auto;
+    margin-top: 25px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+    justify-content: center; /* Center boxes horizontally */
+    gap: 20px; /* Add spacing between boxes */
+    background-color: transparent; /* Make the background fully transparent */
+
+}
+
+
+/* Container styling */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+}
+
+/* Close button */
+.closeA {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.closeA:hover,
+.closeA:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/*<!-- END Modal Structure About -->*/
+
+/* Timeline Container */
+
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* Timeline vertical line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 0.4vw;
+    background-color: #444444;
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Center the line */
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Container for each event */
+.timeline-event {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+/* Left-side events */
+.timeline-event.left {
+    justify-content: flex-end; /* Push the content to the left */
+    padding-right: 50%; /* Push content away from the center */
+}
+
+/* Right-side events */
+.timeline-event.right {
+    justify-content: flex-start; /* Push the content to the right */
+    padding-left: 50%; /* Push content away from the center */
+}
+
+/* Event box styling */
+.timeline-event .content {
+    /* Apply to your background container */
+    background: linear-gradient(to bottom right, rgba(59, 148, 136, 0.7), rgba(0, 0, 0, 0.5));
+    box-shadow: 
+        inset 0 1px 3px rgba(0, 0, 0, 0.3),  /* Maintain the same inner shadows */
+        inset 0 -1px 2px rgba(0, 0, 0, 0.4), 
+        0 6px 12px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 35px;
+    border-radius: 20px;
+    margin: 1vw;
+    width: 80vw; /* Adjust as needed */
+    height: 18vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Ensure content is above the timeline line */
+}
+
+/* Optional: Add a circle or marker on the timeline */
+.timeline-event .marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 4px solid  #474343;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Ensure marker is above the timeline line */
+}
+
+/* Add spacing between timeline events */
+.timeline-event + .timeline-event {
+    margin-top: -2vw; /* Adjust spacing as needed */
+}
+.content h3{
+    font-size: 1.3vw;
+}
+.content i{
+    font-weight: 300;
+}
+.content li{
+    font-weight: 200;
+    font-size: 0.8vw;
+}
+
+
 /* Media Queries for Tablet Screens */
 @media (max-width: 1024px) {
     * {
@@ -676,18 +840,18 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 10vh;
+        min-height: 20vw;
         background-color: #011203;
         padding: 10px;
     }
 
     .container {
         display: flex;
-        background-image: url('back.jpeg');
+        background-image: url('background.jpeg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 165vw;
+        min-height: 220vw;
         min-width: 150VW;
         border-radius: 20px;
         margin-top: -3vw;
@@ -710,7 +874,7 @@ body {
         font-style: normal;
         text-align: left;
         position: absolute;
-        margin-left: 16vw;
+        margin-left: -6vw;
         margin-top: 2vw;
 
     }
@@ -718,27 +882,30 @@ body {
     .profile_image img {
         width: 45vw;
         margin-top: 25vw;
-
         border-radius: 100%;
-        margin-left: 182vw;
+        margin-left: 133vw;
         transition: transform 0.3s ease;
         animation: float 3s ease-in-out infinite;
         /* Adds the floating animation */
     }
 
     .contact-info {
-        margin-top: 178vw;
-        margin-left: 130VW;
+        margin-top: 168vw;
+        margin-left: 82vw;
+        text-align: center;
+        align-items: center;
         position: absolute;
+        
     }
 
     .contact-info h2 {
         margin-bottom: 10px;
-        font-size: 2.8vw;
+        font-size: 3.6vw;
     }
 
     .contact-info p {
-        font-size: 2.3vw;
+        font-size: 2.7vw;
+        font-weight: 400;
         margin-bottom: 5px;
         text-align: center;
         overflow: hidden;
@@ -751,8 +918,8 @@ body {
         display: flex;
         gap: 10px;
         position: absolute;
-        margin-top: 170vw;
-        margin-left: 130vw;
+        margin-top: 190vw;
+        margin-left: 82vw;
         text-align: center;
 
     }
@@ -762,7 +929,8 @@ body {
     .ri-facebook-circle-fill,
     .ri-linkedin-box-fill,
     .ri-whatsapp-fill {
-        font-size: 5.8vw;
+        font-size: 5vw;
+        font-weight: 100;
         text-align: center;
         display: flex;
     }
@@ -792,10 +960,10 @@ body {
         position: relative;
         align-items: center;
         margin-bottom: 20px;
-        margin-left: 63vw;
+        margin-left: 69vw;
         gap: 2.5vw;
         padding: 1%;
-        width: 63vw;
+        width: 65vw;
         margin-top: 2vw;
         border-radius: 25px;
     }
@@ -812,35 +980,10 @@ body {
     .navbar a:hover {
         color: #444;
     }
-
-
-    .btn-signup {
-        padding: 2vw 5vw;
-        border: none;
-        border-radius: 25px;
-        /*margin-left: 31.2vw;*/
-        margin-top: -0.28vw;
-        font-size: 1.8vw;
-        font-weight: 800;
-    }
-
-    .btn-signup {
-        border: 3px solid #ffffff;
-        /* Corrected border with width, style, and color */
-        background-color: #011203;
-        /* New background color */
-        color: #ffffff;
-        /* Text color */
-        font-size: 1.8vw;
-        cursor: pointer;
-        /* Optional: Add a pointer cursor on hover */
-    }
-
-
     .hero-section {
         text-align: left;
-        margin-top: 10vw;
-        margin-left: 45vw;
+        margin-top: 25vw;
+        margin-left: 37vw;
     }
 
     .hero-section h1 {
@@ -870,8 +1013,8 @@ body {
         align-items: center;
         /* Centers the items horizontally within the container */
         margin-bottom: 20%;
-        margin-top: 42vw;
-        margin-left: 70vw;
+        margin-top: 35vw;
+        margin-left: 75vw;
 
     }
 
@@ -909,9 +1052,14 @@ body {
 
     .cta-section {
         text-align: left;
-        margin-left: 47vw;
+        margin-left: 39vw;
         position: absolute;
         margin-top: -110vw;
+        background-color: transparent;
+        border: none;
+        text-align: left;
+        position: relative;
+        width: 54%
     }
 
     .slider-cta {
@@ -1138,6 +1286,154 @@ body {
         /* Increase font size for better readability */
     }
 
+/* Modal default styles (hidden by default) */
 
+
+
+
+/* Scroll View */
+.Ascroll-view {
+    max-height: 200vh; /* Changed from vw (viewport width) to vh (viewport height) */
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    overflow-y: auto;
+    margin-top: 25px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+    justify-content: center; /* Center boxes horizontally */
+    gap: 20px; /* Add spacing between boxes */
+
+}
+
+
+
+/* Container styling */
+.containerA {
+    position: relative;
+    background: rgba(27, 46, 2, 0.1);
+    box-shadow: 
+        inset 0 1px 3px rgba(0, 0, 0, 0),  /* First inner shadow */
+        inset 0 -1px 2px rgba(0, 0, 0, 0), /* Second inner shadow */
+        0 4px 8px rgba(0, 0, 0, 0);        /* Outer shadow */
+    backdrop-filter: blur(90px); /* Apply background blur */
+    width: 75vw;
+
+    
+}
+
+/* Close button */
+.closeA {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.closeA:hover,
+.closeA:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/*<!-- END Modal Structure About -->*/
+
+/* Timeline Container */
+
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* Timeline vertical line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 1vw;
+    background-color: #444444;
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Center the line */
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Container for each event */
+.timeline-event {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+/* Left-side events */
+.timeline-event.left {
+    justify-content: flex-end; /* Push the content to the left */
+    padding-right: 50%; /* Push content away from the center */
+}
+
+/* Right-side events */
+.timeline-event.right {
+    justify-content: flex-start; /* Push the content to the right */
+    padding-left: 50%; /* Push content away from the center */
+}
+
+/* Event box styling */
+.timeline-event .content {
+    /* Apply to your background container */
+    background: linear-gradient(to bottom right, rgba(59, 148, 136, 0.7), rgba(0, 0, 0, 0.5));
+    box-shadow: 
+        inset 0 1px 3px rgba(0, 0, 0, 0.3),  /* Maintain the same inner shadows */
+        inset 0 -1px 2px rgba(0, 0, 0, 0.4), 
+        0 6px 12px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 3.5vw;
+    border-radius: 20px;
+    margin: 1vw;
+    width: 50vw; /* Adjust as needed */
+    height: 80vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Ensure content is above the timeline line */
+}
+
+/* Optional: Add a circle or marker on the timeline */
+.timeline-event .marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 4px solid  #474343;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Ensure marker is above the timeline line */
+}
+
+/* Add spacing between timeline events */
+.timeline-event + .timeline-event {
+    margin-top: -10vw; /* Adjust spacing as needed */
+}
+.content h3{
+    font-size: 3vw;
+}
+.content i{
+    font-weight: 300;
+    font-size: 2vw;
+}
+.content li{
+    font-weight: 200;
+    font-size: 2vw;
+}
 
 }
