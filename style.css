@@ -791,7 +791,7 @@ body {
     padding: 35px;
     border-radius: 20px;
     margin: 1vw;
-    width: 80vw; /* Adjust as needed */
+    width: 70vw; /* Adjust as needed */
     height: 18vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 2; /* Ensure content is above the timeline line */
