@@ -52,3 +52,29 @@ window.onclick = function(event) {
         Emodal.style.display = "none";
     }
 }
+
+
+var Amodal = document.getElementById("myAbout");
+
+// Get the button that opens the modal
+var Abtn = document.getElementById("openAboutBtn");
+
+// Get the <span> element that closes the modal
+var Aspan = document.getElementsByClassName("closeA")[0];
+
+// When the user clicks the button, open the modal
+Abtn.onclick = function() {
+    Amodal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+Aspan.onclick = function() {
+    Amodal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == Amodal) {
+        Amodal.style.display = "none";
+    }
+}
