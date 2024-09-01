@@ -785,7 +785,7 @@ body {
     border-radius: 20px;
     margin: 1vw;
     width: 70vw; /* Adjust as needed */
-    height: 18vw;
+    height: 20vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 2; /* Ensure content is above the timeline line */
 }
@@ -813,10 +813,11 @@ body {
 }
 .content i{
     font-weight: 300;
+    font-size: 0.9vw;
 }
 .content li{
     font-weight: 200;
-    font-size: 0.8vw;
+    font-size: 0.9vw;
 }
 
 
