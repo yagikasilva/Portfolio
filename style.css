@@ -355,7 +355,7 @@ body {
     backdrop-filter: blur(10px); /* Apply background blur */
     padding: 10px;
     margin: 10px 0;
-    height: 15vw;
+    height: 19vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -413,6 +413,14 @@ body {
     color: #000;
 }
 
+.box a span{
+    color: #ffffff;
+    border-radius: 0.5vw;
+    padding: 0.36vw;
+    margin: 0.1vw;
+    font-size: 0.7vw;
+    background-color: #1c6d03;
+}
 /* Close button */
 .close {
     color: #aaa;
@@ -1149,6 +1157,15 @@ body {
     .box a {
         text-decoration: none;
         color: #000;
+    }
+
+    .box a span{
+        color: #ffffff;
+        border-radius: 0.5vw;
+        padding: 0.5vw;
+        margin: 0.4vw;
+        font-size: 1.9vw;
+        background-color: #1c6d03;
     }
     /*<!-- END Modal Structure MY PROJECTS -->*/
 
